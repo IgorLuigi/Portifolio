@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Meu Portifólio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(145, 208, 245);
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .main{
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row{
+            margin: 8px -16px;
+        }
+
+        .row, .row>.column{
+            padding: 30px;
+        }
+
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+        .column{
+            float: left;
+            width: 25%;
+        }
+
+        .content{
+            background-color: white;
+            padding: 15px;
+        }
+
+        @media screen and (max-width:900px) {
+            .column{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .column{
+                width: 600%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "main">
+        <h1>Meu Portifolio</h1>
+        <hr/>
+        <h2>Igor Luigi de Oliveira</h2>
+        <p>Sou acadêmico do Instituto Federal do Paraná (IFPR), estou no terceiro ano do curso de Engenharia de Software, localizado na cidade de Paranavaí. Tenho 21 anos. </p>
+        <p>Meus contatos: WhatsApp Empresarial +55 (44)99109-0344 / Email: igor.luigi@hotmail.com
+        </p>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "content">
+                    <img src="./imagens/imagem2.png" alt="Imagem Teste"style="width: 100%;">
+                    <h3>Projeto Agenda</h3>
+                    <p>Neste projeto é desenvolvido uma Agenda simples, onde nela foram aplicados os paradigmas da orientação a objeto.
+                        Nesta agenda conseguimos cadastrar, buscar e excluir um contato. Na busca, conseguimos buscar por nome, email ou telefone do contato.
+                        Por fim, a persistência de dados nela se da através do banco de dados H2 e por meio de JDBC puro.
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "content">
+                    <img src="./imagens/imagem3.png" alt="Imagem Teste"style="width: 100%;">
+                    <h3>Projeto Flutter</h3>
+                    <p>Neste projeto, será desenvolvido um projeto em Flutter onde tem como objetivo realizar um controle de finanças.
+                        O projeto ainda está em desenvolvimento.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "content">
+            <img src="./imagens/imagem1.png" style="width: 100%;">
+            <h3>Curso de Java Script</h3>
+            <p>Aqui temos um curso que estou fazer de JavaScript abordando diversos temas. Por enquanto ainda está incompleto o curso, no entanto, pretendo terminar assim que possível.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
